@@ -1,0 +1,194 @@
+package com.example.imad2
+
+import android.annotation.SuppressLint
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.view.View
+import android.widget.EditText
+import android.widget.TextView
+
+class MainActivity<Button : View?> : AppCompatActivity() {
+    @SuppressLint("MissingInflatedId", "SetTextI18n")
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+        val ageEditText = findViewById<EditText>(R.id.ageEditText)
+        val findCelebrityButton = findViewById<Button>(R.id.findCelebrityButton)
+        val clearButton = findViewById<Button>(R.id.clearButton)
+        val titleTextView = findViewById<TextView>(R.id.titleTextView)
+        val textView = findViewById<TextView>(R.id.textView)
+        if (findCelebrityButton != null) {
+            findCelebrityButton.setOnClickListener { view: View ->
+                clearButton?.setOnClickListener {
+                    ageEditText.text.clear()
+                    textView.text = ""}
+
+                val userInput = ageEditText.text.toString().toIntOrNull()
+                if (userInput == 21) {
+                    textView.text =
+                        "Juice World, A famous rapper passed away at the young age of 21"
+                } else if (userInput == 22) {
+                    textView.text = "R&B singer and actor Aaliyah Dana Haughton passed away at 22"
+                } else if (userInput == 23) {
+                    textView.text = "Bhagat Singh, a civil rights leader passed away at 23"
+                } else if (userInput == 24) {
+                    textView.text =
+                        "The Notorious BIG or as some call him Big papa passed away at the age of 24"
+                } else if (userInput == 25) {
+                    textView.text =
+                        "One of the greatest rappers of all time Tupac Shakur passed away at the age of 25"
+                } else if (userInput == 26) {
+                    textView.text = "Mac Miller a famous musician passed away at the age of 26"
+                } else if (userInput == 27) {
+                    textView.text = "Jimi hendrix a famous guitarist passed away at the age of 27"
+                } else if (userInput == 28) {
+                    textView.text = "Heath Ledger/The Joker passed away at the age of 28"
+                } else if (userInput == 29) {
+                    textView.text =
+                        "Lee Thompson Young a well known actor passed away at the age of 29"
+                } else if (userInput == 30) {
+                    textView.text =
+                        "EAZY-E from the famous rap group NWA passed away at the age of 30}"
+                } else if (userInput == 31) {
+                    textView.text =
+                        "Jean Harlow passed away at the age of 31, she was a famous actress"
+                } else if (userInput == 32) {
+                    textView.text =
+                        "Bruce Lee, martial artist and actor, passed away at the age of 32"
+                } else if (userInput == 33) {
+                    textView.text = "John Belushi, actor and comedian, passed away at the age of 33"
+                } else if (userInput == 34) {
+                    textView.text = "Chris Farley, comedian and actor, passed away at the age of 34"
+                } else if (userInput == 35) {
+                    textView.text = "Andy Gibb, musician and singer, passed away at the age of 35"
+                } else if (userInput == 36) {
+                    textView.text = "Marilyn Monroe, iconic actress, passed away at the age of 36"
+                } else if (userInput == 37) {
+                    textView.text = "Van Gogh, painter, passed away at the age of 37"
+                } else if (userInput == 38) {
+                    textView.text = "Keith Moon, drummer for The Who, passed away at the age of 38"
+                } else if (userInput == 39) {
+                    textView.text =
+                        "Martin Luther King Jr., civil rights leader, passed away at the age of 39"
+                } else if (userInput == 40) {
+                    textView.text =
+                        "Galeazzo Ciano, Italian Foreign Minister, passed away at the age of 40"
+                } else if (userInput == 56) {
+                    textView.text =
+                        "Steve Jobs, co-founder of Apple Inc. passed away at the age of 56"
+                } else if (userInput == 60) {
+                    textView.text =
+                        "Teddy Roosevelt, 26th President of the United States, passed away at the age of 60"
+                } else if (userInput == 65) {
+                    textView.text =
+                        "Walt Disney, animator and film producer, passed away at the age of 65"
+                } else if (userInput == 75) {
+                    textView.text =
+                        "Alexandrer Graham Bell, a famous inventor who invented the first telephone passed away at the age of 75"
+                } else if (userInput == 85) {
+                    textView.text =
+                        "Karl Lagerfield, a famous fashion designer passed away at the age of 85"
+                } else if (userInput == 98) {
+                        textView.text = "Georgia O'Keeffe, artist, passed away at the age of 98"
+                    } else if (userInput == 100) {
+                        textView.text =
+                            "Bob Hope, comedian and actor, passed away at the age of 100"
+                   // Celebrities found through Famosu Birthdays. Available at: https://www.famousbirthdays.com/deceased/ (accessed on 24 March 2024) /*
+                    } else {
+                        "You have entered an invalid number, please try again"
+                    }
+
+
+                }
+            }
+        }
+    }
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backroundimage5"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="186dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Celebrity Finder"
+        android:textColor="?android:attr/colorFocusedHighlight"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+        android:text="red"
+
+    <EditText
+        android:id="@+id/ageEditText"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Enter Age"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColor="@color/material_dynamic_primary100"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <Button
+        android:id="@+id/findCelebrityButton"
+        android:layout_width="154dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/ageEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#DF7D12"
+        android:text="Find Celebrity"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/findCelebrityButton"
+        android:layout_alignStart="@id/ageEditText"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#DA8317"
+        android:text="Clear"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="271dp"
+        android:layout_height="382dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="71dp"
+        app:srcCompat="@drawable/gold2"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="169dp"
+        android:layout_height="68dp"
+        android:layout_alignStart="@+id/imageView4"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_alignEnd="@+id/imageView4"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="153dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="232dp"
+        android:text="TextView"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>
