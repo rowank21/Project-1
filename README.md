@@ -29,11 +29,16 @@ Beyond generational connections and preserving cultural heritage, Celeb finder s
 Facilitating Educational Opportunities:
 Celeb finder also presents valuable educational opportunities for users to learn about the lives and achievements of iconic celebrities from various fields. Through content, including biographies, interviews, archival footage, and multimedia presentations, the app offers a comprehensive exploration of each celebrity's legacy. Users can delve into the cultural, historical, and societal contexts that shaped these individuals and discover the lasting impact of their contributions. Whether used in classrooms as a teaching tool or as a personal learning resource, Celeb finder provides a dynamic platform for education and enlightenment, empowering users to broaden their horizons and deepen their understanding of the world around them.
 
+Problems encountered on the design of this app
+My textview was overlapping my clear button however the clear button was still visible and functional this happened becuase of the other problem i encountered which was the app crashing after i pused my project to github, i solved this through creating a new project and changing the sdk manger settings to accomodate this new code. this crashing problem also created another problem for which was i was unable to do my voiceover becuase the app was crashing. Through creating a new project i was able to 
+
 In conclusion, Celeb finder transcends the boundaries of time and space, connecting generations through the timeless memories of iconic celebrities. By using generational connections, preserving cultural heritage, inspiring reflection and inspiration, and facilitating educational opportunities, the app enriches lives, sparks conversations, and ensures that the legacies of beloved celebrities never truly fade away. Whether you're a nostalgic soul yearning for a glimpse of the past or a curious explorer eager to discover the icons who shaped history, Celeb finder invites you to embark on a journey through time – where memories are made eternal, and celebrities live on forever.
 
 if this introduction didnt excite you enough, here is a real time walkthrough of the app showcasing all its features and usability.
 
 this is the link to my youtube video https://youtu.be/_xSgpTZWxfQ?si=4nzsec4JimZYAMFU
+referencing :  code.org. available at:https://studio.code.org/docs/ide/applab/expressions/declareNoAssign_x. accessed on: [14 march 2024]
+Famous birthdays.available at:https://www.famousbirthdays.com/deceased/ accessed on [24 march 2024]
 
 
 
