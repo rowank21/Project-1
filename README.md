@@ -33,6 +33,8 @@ In conclusion, Celeb finder transcends the boundaries of time and space, connect
 
 if this introduction didnt excite you enough, here is a real time walkthrough of the app showcasing all its features and usability.
 
+this is the link to my youtube video https://youtu.be/_xSgpTZWxfQ?si=4nzsec4JimZYAMFU
+
 
 
 
